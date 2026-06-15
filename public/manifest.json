@@ -1,0 +1,43 @@
+{
+  "name": "AXCEL — Train Smarter. Build Stronger.",
+  "short_name": "AXCEL",
+  "description": "High-performance fitness app for athletes and fitness enthusiasts.",
+  "start_url": "/home",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#15121c",
+  "theme_color": "#15121c",
+  "categories": ["health", "fitness", "sports"],
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Mulai Workout",
+      "short_name": "Workout",
+      "description": "Lihat katalog latihan",
+      "url": "/workouts",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Jadwal Saya",
+      "short_name": "Jadwal",
+      "description": "Lihat jadwal latihan",
+      "url": "/schedule",
+      "icons": [{ "src": "/icons/icon.svg", "sizes": "any" }]
+    }
+  ]
+}
