@@ -46,9 +46,9 @@ export default function FitnessLevelPage() {
         {/* Progress */}
         <div className="flex w-full flex-row items-center justify-center gap-xs mb-lg">
           <div className="h-2 w-full rounded-full bg-elevated max-w-[40px]" />
+          <div className="h-2 w-full rounded-full bg-elevated max-w-[40px]" />
+          <div className="h-2 w-full rounded-full bg-elevated max-w-[40px]" />
           <div className="h-2 w-full rounded-full bg-primary-container max-w-[40px]" />
-          <div className="h-2 w-full rounded-full bg-elevated max-w-[40px]" />
-          <div className="h-2 w-full rounded-full bg-elevated max-w-[40px]" />
         </div>
 
         <h1
