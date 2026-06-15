@@ -16,7 +16,7 @@ export default function BottomNav() {
   if (pathname.endsWith('/active') || pathname.endsWith('/complete')) return null;
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full z-50 bg-zinc-950/90 backdrop-blur-md border-t border-white/10 shadow-[0_-4px_20px_rgba(139,92,246,0.15)] flex justify-around items-center px-4 py-3 md:hidden">
+    <nav className="fixed bottom-0 left-0 w-full z-50 bg-zinc-950/90 backdrop-blur-md border-t border-white/10 shadow-[0_-4px_20px_rgba(139,92,246,0.15)] flex justify-around items-center px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:hidden">
       {NAV_ITEMS.map(({ href, label, icon }) => {
         const isActive = pathname === href || pathname.startsWith(href + '/');
         return (

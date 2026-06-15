@@ -51,23 +51,23 @@ export default function SchedulePage() {
       <main className="relative z-10 flex flex-col gap-xl mt-md">
         {/* Week view */}
         <section className="px-margin-mobile">
-          <div className="flex justify-between items-center w-full">
+          <div className="grid grid-cols-7 w-full">
             {WEEK.map(({ day, date, status, dotColor }) => {
               const isToday = status === 'today';
               return (
-                <div key={day} className="flex flex-col items-center gap-2 cursor-pointer group">
+                <div key={day} className="flex flex-col items-center gap-1.5 cursor-pointer group">
                   <span
-                    className={`font-body text-label-md transition-colors ${
+                    className={`font-body text-[10px] tracking-wide transition-colors ${
                       isToday ? 'text-primary-fixed' : 'text-outline group-hover:text-on-surface'
                     }`}
                   >
                     {day}
                   </span>
                   <div
-                    className={`flex items-center justify-center font-body text-body-lg font-medium transition-colors ${
+                    className={`flex items-center justify-center font-body text-sm font-medium transition-colors ${
                       isToday
-                        ? 'w-11 h-11 rounded-full bg-primary-container text-on-primary-container shadow-[0_0_15px_rgba(124,58,255,0.3)] font-bold'
-                        : 'w-10 h-10 rounded-full text-on-surface-variant group-hover:bg-surface-container-low'
+                        ? 'w-9 h-9 rounded-full bg-primary-container text-on-primary-container shadow-[0_0_15px_rgba(124,58,255,0.3)] font-bold'
+                        : 'w-9 h-9 rounded-full text-on-surface-variant group-hover:bg-surface-container-low'
                     }`}
                   >
                     {date}

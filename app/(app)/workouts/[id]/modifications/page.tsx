@@ -66,8 +66,8 @@ export default function ModificationsPage() {
 
         {/* Original card */}
         <div className="rounded-2xl overflow-hidden border border-primary-container/40 bg-surface-container shadow-[0_0_20px_rgba(124,58,255,0.15)]">
-          <div className="flex items-stretch h-[120px]">
-            <div className="w-[130px] shrink-0 relative overflow-hidden">
+          <div className="flex items-stretch min-h-[100px]">
+            <div className="w-[110px] shrink-0 relative overflow-hidden">
               <img
                 src={HERO_IMG}
                 alt={workoutName}
@@ -95,9 +95,9 @@ export default function ModificationsPage() {
             key={mod.id}
             className="rounded-2xl overflow-hidden border border-outline-variant bg-surface-container"
           >
-            <div className="flex items-stretch min-h-[130px]">
+            <div className="flex items-stretch min-h-[110px]">
               {/* Image */}
-              <div className="w-[130px] shrink-0 relative overflow-hidden bg-surface-container-high">
+              <div className="w-[110px] shrink-0 relative overflow-hidden bg-surface-container-high">
                 {mod.img ? (
                   <img
                     src={mod.img}

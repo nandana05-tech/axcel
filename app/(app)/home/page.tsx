@@ -83,7 +83,7 @@ export default function HomePage() {
         </Link>
       </header>
 
-      <main className="flex-1 w-full max-w-7xl mx-auto px-margin-mobile md:px-xl py-lg space-y-xl">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-margin-mobile md:px-xl py-lg space-y-xl overflow-x-hidden">
         {/* Weekly Progress */}
         <section className="space-y-4">
           <div className="flex justify-between items-end">

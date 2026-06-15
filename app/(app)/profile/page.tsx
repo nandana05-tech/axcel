@@ -138,10 +138,10 @@ export default function ProfilePage() {
               <span key={i} className="font-body text-label-md text-on-surface-variant">{d}</span>
             ))}
           </div>
-          <div className="grid grid-cols-7 gap-2 text-center">
+          <div className="grid grid-cols-7 gap-1 text-center">
             {CALENDAR_DAYS.map((day, i) => {
               if (!day) return <div key={i} />;
-              const base = 'aspect-square rounded-full flex items-center justify-center font-body text-body-md text-on-surface';
+              const base = 'aspect-square rounded-full flex items-center justify-center font-body text-xs text-on-surface';
               const styles: Record<string, string> = {
                 workout: `${base} bg-primary-container`,
                 rest: `${base} bg-surface-variant`,

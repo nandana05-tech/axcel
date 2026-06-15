@@ -107,7 +107,7 @@ export default function ActiveWorkoutPage() {
         </section>
 
         {/* Metric controls */}
-        <section className="grid grid-cols-3 gap-sm sm:gap-md">
+        <section className="grid grid-cols-3 gap-xs sm:gap-md">
           {[
             { label: 'SET', displayValue: `${sets}/5`, unit: '', setter: setSets },
             { label: 'REPS', displayValue: `${reps}`, unit: '', setter: setReps },
@@ -115,25 +115,25 @@ export default function ActiveWorkoutPage() {
           ].map(({ label, displayValue, unit, setter }) => (
             <div
               key={label}
-              className="bg-surface-container rounded-lg p-md flex flex-col items-center justify-between border border-outline-variant shadow-[0_2px_10px_rgba(0,0,0,0.2)]"
+              className="bg-surface-container rounded-lg px-1 py-3 flex flex-col items-center justify-between border border-outline-variant shadow-[0_2px_10px_rgba(0,0,0,0.2)]"
             >
-              <span className="font-body text-label-md text-outline tracking-wider mb-sm">{label}</span>
-              <div className="font-headline text-headline-md text-on-surface mb-sm flex items-baseline gap-xs">
+              <span className="font-body text-[10px] text-outline tracking-wider mb-2">{label}</span>
+              <div className="font-headline text-headline-md text-on-surface mb-2 flex items-baseline gap-[2px]">
                 {displayValue}
-                {unit && <span className="font-body text-label-md text-outline uppercase">{unit}</span>}
+                {unit && <span className="font-body text-[10px] text-outline uppercase">{unit}</span>}
               </div>
-              <div className="flex gap-xs mt-auto">
+              <div className="flex gap-[4px] mt-auto w-full justify-center">
                 <button
                   onClick={() => setter((v: number) => Math.max(1, v - 1))}
-                  className="w-8 h-8 rounded bg-surface-variant flex items-center justify-center text-on-surface hover:bg-surface-container-high active:scale-95 transition-all"
+                  className="w-7 h-7 rounded bg-surface-variant flex items-center justify-center text-on-surface hover:bg-surface-container-high active:scale-95 transition-all"
                 >
-                  <span className="material-symbols-outlined text-sm">remove</span>
+                  <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>remove</span>
                 </button>
                 <button
                   onClick={() => setter((v: number) => v + 1)}
-                  className="w-8 h-8 rounded bg-surface-variant flex items-center justify-center text-on-surface hover:bg-surface-container-high active:scale-95 transition-all"
+                  className="w-7 h-7 rounded bg-surface-variant flex items-center justify-center text-on-surface hover:bg-surface-container-high active:scale-95 transition-all"
                 >
-                  <span className="material-symbols-outlined text-sm">add</span>
+                  <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>add</span>
                 </button>
               </div>
             </div>

@@ -216,7 +216,7 @@ export default function WorkoutDetailPage() {
 
       {/* Saved toast */}
       <div
-        className={`fixed bottom-[100px] left-1/2 -translate-x-1/2 z-50 flex items-center gap-sm px-lg py-sm rounded-full bg-surface-container-high border border-outline-variant shadow-xl transition-all duration-300 whitespace-nowrap ${
+        className={`fixed bottom-[200px] left-1/2 -translate-x-1/2 z-[70] flex items-center gap-sm px-lg py-sm rounded-full bg-surface-container-high border border-outline-variant shadow-xl transition-all duration-300 whitespace-nowrap ${
           showSavedToast ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2 pointer-events-none'
         }`}
       >

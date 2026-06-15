@@ -128,12 +128,12 @@ export default function CreateSchedulePage() {
           <label className="font-body text-label-md text-on-surface-variant uppercase tracking-widest">
             Repeat Weekly
           </label>
-          <div className="flex justify-between">
+          <div className="grid grid-cols-7 gap-1">
             {DAYS.map((d, i) => (
               <button
                 key={i}
                 onClick={() => toggleDay(i)}
-                className={`w-10 h-10 rounded-full font-body text-label-lg font-bold transition-all active:scale-95 ${
+                className={`w-full aspect-square rounded-full font-body text-sm font-bold transition-all active:scale-95 ${
                   selectedDays.includes(i)
                     ? 'bg-accent text-background shadow-[0_0_12px_rgba(0,229,160,0.3)]'
                     : 'bg-surface-container border border-outline-variant text-on-surface-variant hover:bg-surface-container-high'

@@ -68,7 +68,7 @@ export default function ShareModal({ isOpen, onClose, workoutName, duration, cal
         {/* Social share */}
         <div className="px-md">
           <p className="font-body text-label-md text-on-surface-variant uppercase tracking-widest mb-md">Share Workout</p>
-          <div className="flex gap-lg mb-lg">
+          <div className="flex gap-md mb-lg justify-around">
             {SOCIALS.map(({ label, emoji, bg }) => (
               <div key={label} className="flex flex-col items-center gap-xs">
                 <button
